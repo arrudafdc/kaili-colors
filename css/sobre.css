@@ -7,10 +7,6 @@
     margin-bottom: 32px;
 }
 
-.sobre.ativo {
-    margin-bottom: 0;
-}
-
 .title {
     font-family: 'Elsie', serif;
     font-size: 8rem;
@@ -44,10 +40,6 @@
     .img-principal {
         width: 382px;
     }
-
-    .menu.ativo {
-        height: 100vh;
-    }
 }
 
 @media (max-width: 680px) {
@@ -80,7 +72,10 @@
     }
 
     .menu.ativo {
-        height: 100%;
         width: 100%;
+    }
+
+    body {
+        overflow: hidden;
     }
 }
