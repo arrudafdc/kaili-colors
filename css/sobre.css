@@ -75,7 +75,7 @@
         width: 100%;
     }
 
-    body {
+    body.ativo {
         overflow: hidden;
     }
 }
