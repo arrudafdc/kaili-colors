@@ -7,19 +7,11 @@
     margin-bottom: 32px;
 }
 
-.title {
-    font-family: 'Elsie', serif;
-    font-size: 8rem;
-    color: #D5B11E;
-}
-
 .sobre p {
     position: absolute;
     max-width: 580px;
     left: 605px;
     bottom: 0;
-    font-size: 1.75rem;
-    line-height: 2.3rem;
     margin-right: 32px;
 }
 
