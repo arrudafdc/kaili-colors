@@ -1,35 +1,30 @@
-article ul{
+.article ul{
     padding: 0 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-article ul a {
+.quadro-container {
     display: flex;
-    background: green;
     height: 578px;
     width: 49%;
-    background: #F2F2F2;
+    background: linear-gradient(rgb(240, 240, 240) 0%, rgb(240, 240, 240) 100%), rgb(240, 240, 240);
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
     box-sizing: border-box;
     position: relative;
-}
-
-.quadro {
     padding: 24px;
 }
 
-.quadro img {
+.article img {
     max-height: 456px;
-    max-width: 328px;
     display: block;
 }
 
-.teste {
-    background: #F2F2F2;
+.quadro-text {
+    background: linear-gradient(rgb(240, 240, 240) 0%, rgb(240, 240, 240) 100%), rgb(240, 240, 240);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -38,16 +33,43 @@ article ul a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 96px;
     opacity: 0;
 }
 
-.teste p {
+.quadro-text p {
     max-width: 80%;
     text-align: center;
     line-height: 6rem;
+    font-size: 6rem;
 }
 
-.teste:hover {
+.quadro-text:hover {
     opacity: 1;
+    transition: .2s;
+}
+
+@media (max-width: 1000px) {
+    .quadro-text p {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .quadro-container {
+        padding: 42px;
+        height: 428px;
+    }
+
+    .article img {
+        max-height: 328px;
+    }
+}
+
+@media (max-width: 680px) {
+    .article ul {
+        padding: 16px;
+    }
+
+    .quadro-container {
+        width: 100%;
+    }
 }
