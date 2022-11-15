@@ -75,6 +75,7 @@
         width: 100%;
         height: 100%;
         padding: 0;
+        margin-bottom: 64px;
     }
 
     .article img {
@@ -84,6 +85,23 @@
     }
 
     .quadro-text {
-        display: none;
+        opacity: 1;
+        width: 100%;
+        height: 0;
+        background: none;
+        position: unset;
+        display: block;
     }
+
+    .quadro-text p {
+        max-width: none;
+        text-align: unset;
+        font-size: 1.5rem;
+        line-height: 1rem;
+        color: #141414;
+        font-weight: lighter; 
+        padding-top: 12px;
+ }
+
 }
+
